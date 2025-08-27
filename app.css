@@ -1,0 +1,50 @@
+
+@import url("")
+* {
+    margin: 0;
+    padding:0 ;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    padding: 20px 100px;
+    background:rgb(0, 254, 4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+.navbar a {
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #e60a0a;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 30px;
+}
+.navbar a::after{
+    content:'';
+    position: absolute;
+    left:0;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    background:#e2d8d8;
+    border-radius: 5px;
+    transform: translate(10px );
+    opacity: 0;
+    transition: .5s;
+}
+.navbar a:hover::after{
+    transform: translateY(0);
+    opacity: 1;
+}
+.LOGO {
+    font-size: 2em;
+    color:#e2d8d8;
+    user-select: none;
+}
